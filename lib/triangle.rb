@@ -12,9 +12,6 @@ class Triangle
       @type = :scalene
     end
   end
-
-
-  end
   # write code here
 
 
