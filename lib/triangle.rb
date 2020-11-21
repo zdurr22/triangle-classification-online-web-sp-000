@@ -14,6 +14,8 @@ class Triangle
       @type = :isosceles
     elsif length_a + length_b < length_c || length_b + length_c < length_a || length_a + length_c < length_b
       raise TriangleError
+    elsif length_a == 0 || length_b == 0 || length_c == 0
+      raise TriangleError
     else
       @type = :scalene
     end
