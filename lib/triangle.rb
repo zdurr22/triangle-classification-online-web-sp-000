@@ -2,6 +2,10 @@ class Triangle
   attr_accessor :type
 
   def initialize(length_a, length_b, length_c)
+
+  end
+
+  def kind
     if length_a == length_b || length_b == length_c || length_a == length_c
       @type = :isosceles
     elsif length_a == length_b && length_a == length_c
@@ -11,8 +15,6 @@ class Triangle
     else
       @type = :scalene
     end
-  end
-
 
 
 
